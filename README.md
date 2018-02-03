@@ -1,6 +1,6 @@
 # SoftConnect
 
-Demo app, submitted from team SoftConnect to <a hrer="https://forloop.africa">forLoop</a>'s 2018 <a href="https://medium.com/techtrument/the-forloopunilag-hackathon-hackoka-bd615964adc7">HACKOKA</a> hackathon.
+Demo app, submitted from team SoftConnect to <a href="https://forloop.africa">forLoop</a>'s 2018 <a href="https://medium.com/techtrument/the-forloopunilag-hackathon-hackoka-bd615964adc7">HACKOKA</a> hackathon.
 
 <h3>Problem</h3>
 
@@ -17,9 +17,9 @@ On successful payment, a message is sent to the student.
 <h3>Demo Details</h3>
 
 This app is meant to be built on top of an existing students database. Currently, a dummy database was created to simulate this. It has been populated with two profiles whose matriculation numbers are 170805028 and 170805037. These numbers can be entered into the input field on the home page to see how the process was designed. The simulator is required to test the USSD app and view messages sent. 
-<u>Admin login details:</u>
-Username: admin
-Password: admin123
+<u>Admin login details:
+  Username: admin
+  Password: admin123
 
 Project URL: http://flashpointintl.tk/SoftConnect/ 
 Admin URL : http://flashpointintl.tk/SoftConnect/admin/
