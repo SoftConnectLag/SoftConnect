@@ -25,3 +25,11 @@ Project URL: http://flashpointintl.tk/SoftConnect/
 Admin URL : http://flashpointintl.tk/SoftConnect/admin/
 
 Contact any of these numbers for support: 08105398746, 08167364146.
+
+<h3>Technologies used</h3>
+
+HTML5 
+CSS3
+Javascript 
+PHP
+MySQL
