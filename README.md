@@ -1,16 +1,27 @@
 # SoftConnect
-Provides efficient relationship between Unilag DSA and the students
 
-It is a Solution that is expected to Bridge the gap between UNILAG DSA and The Students, We have a dummy DSA Side which Enables the DSA Send Messages, View Sent Messages and View Users Who have Paid.. We also created a USSD Utility App, with short code as *384*22222# which enables registered students Check if they're registered and also View their Matric No.. 
+Demo app, submitted from team SoftConnect to <a hrer="https://forloop.africa">forLoop</a>'s 2018 <a href="https://medium.com/techtrument/the-forloopunilag-hackathon-hackoka-bd615964adc7">HACKOKA</a> hackathon.
 
-We have Test Values for Matric No on the Users side as 170805028 and 170805037 and Phone Numbers as +2347016663388 and +2348167364146 respectively...
+<h3>Problem</h3>
 
-We also have admin login details as Username : admin, Password : admin123.. 
+LagMobile is a service offered by Unilag's DSA, to notify students of news updates. The current registration process involves students queuing to fill their details with a pen and paper. Already we can think of possible problems. After this process, a lot of students claim to receive no messages from the DSA, probably due to the fact that the DSA couldn't correctly register students as a result of illegible handwritings, and/or an inefficient method of dispatching messages.
 
-The USSD Service Should be tested on Sandbox.. Also for the bulk SMS sent by DSA to students should be tested via sandbox..
+<h3>What does SoftConnect offer?</h3>
 
-User Side URL : http://flashpointintl.tk/SoftConnect/
-Admin Side URL : http://flashpointintl.tk/SoftConnect/admin/
+SoftConnect was designed to overhaul the existing Unilag LagMobile registration. It provides an easy way to subscribe to LagMobile services and gives the DSA a better and controlled environment to send messages to subscribers. With this piece of software, all that is required from the students are their matriculation/registration numbers. After they are identified as students, they can proceed to pay for the service. This carefully crafted system eliminates occurrences of error that will occur with a pen and paper. The DSA can simply make use of the administration panel to manage the customizable dispatch of messages.
 
-Feel Free to Call me on 08105398746 for any info..
-Thanks
+As a utility software, the USSD app was designed to provide two pieces of information to students: their subscription status and matriculation/registration number. To access it, simply dial <code>\*384\*22222#</code>
+
+On successful payment, a message is sent to the student.
+
+<h3>Demo Details</h3>
+
+This app is meant to be built on top of an existing students database. Currently, a dummy database was created to simulate this. It has been populated with two profiles whose matriculation numbers are 170805028 and 170805037. These numbers can be entered into the input field on the home page to see how the process was designed. The simulator is required to test the USSD app and view messages sent. 
+<u>Admin login details:</u>
+Username: admin
+Password: admin123
+
+Project URL: http://flashpointintl.tk/SoftConnect/ 
+Admin URL : http://flashpointintl.tk/SoftConnect/admin/
+
+Contact any of these numbers for support: 08105398746, 08167364146.
