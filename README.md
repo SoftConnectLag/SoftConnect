@@ -17,9 +17,8 @@ On successful payment, a message is sent to the student.
 <h3>Demo Details</h3>
 
 This app is meant to be built on top of an existing students database. Currently, a dummy database was created to simulate this. It has been populated with two profiles whose matriculation numbers are 170805028 and 170805037. These numbers can be entered into the input field on the home page to see how the process was designed. The simulator is required to test the USSD app and view messages sent. 
-Admin login details:
-  Username: admin
-  Password: admin123
+
+Admin login details are admin (username) and admin123 (password).
 
 Project URL: http://flashpointintl.tk/SoftConnect/
 
