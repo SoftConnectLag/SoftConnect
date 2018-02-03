@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LagMobile Registration Form</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+</head>
+
+<body>
+
+    <!-- Top menu -->
+    <nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+                <a class="navbar-brand" href="index.html">
+                    <!-- <img src="assets/img/logo.png" alt="LagMobile Registration Form"> -->
+                    <b style="font-family: Trebuchet MS, sans-serif; font-size: 29px; color: #fff;">SoftConnect</b>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="top-navbar-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <span class="li-social">
+                            <a href="https://twitter.com/maxusdev" target="_blank"><i class="fa fa-twitter"></i></a> 
+                            <a href="https://www.instagram.com/iam_lhamide/" target="_blank"><i class="fa fa-instagram"></i></a> 
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top content -->
+    <div class="top-content">
+
+        <div class="inner-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 text">
+                        <h1><strong>LagMobile</strong> Registration</h1>
+                    </div>
+                    <div class="col-sm-5 form-box">
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3>Verify Here</h3>
+                                <p>Type your Matric Number below:</p>
+                            </div>
+                            <div class="form-top-right">
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <form role="form" action="" method="post" class="registration-form" id="registration-form" name="registration-form">
+                                <div class="form-group">
+                                    <label class="sr-only" for="reg_no">Matric / JAMB No:</label>
+                                    <input type="text" name="reg_no" placeholder="Reg Number.." value="170805028" required="required" class="form-last-name form-control" id="reg_no">
+                                </div>
+                                <button type="submit" class="btn" id="checkNumber">Verify&nbsp;<i class="fa fa-arrow-right" id="ier"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Central Modal Medium Success -->
+    <div class="modal fade" id="responseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-success" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <div class="text-right">
+                            <a type="button" class="btn btn-outline-secondary-modal waves-effect text-right" data-dismiss="modal"><i class="fa fa-close fa-2x"></i></a>
+                        </div>
+                        <!-- <i class="fa fa-check fa-4x mb-3 animated rotateIn" style="color:green;"></i> -->
+                        <p id="response-text"></p>
+                        <div id="hidden_div">
+                            <form name="checkEligibility" id="checkEligibility">
+                                <label for="student_level">Select Level</label>
+                                <select class="form-control student_level" id="student_level" name="student_level">
+									<option value="0">Select your Level</option>
+									<option value="100">100 Level</option>								
+									<option value="200">200 Level</option>
+									<option value="300">300 Level</option>
+									<option value="400">400 Level</option>
+									<option value="500">500 Level</option>
+									<option value="600">600 Level</option>
+									<option value="700">700 Level</option>								
+								</select>
+                                <p id="notice"></p>
+                                <button type="submit" class="btn btn-success" id="checker">Proceed&nbsp;<i class="fa fa-arrow-right"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- Central Modal Medium Success-->
+
+
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/retina-1.1.0.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+</body>
+
+</html>
